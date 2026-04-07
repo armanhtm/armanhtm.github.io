@@ -125,6 +125,33 @@
             color: #00aaff;
         }
 
+        .research-item .venue {
+            color: #888;
+        }
+
+        .research-item .venue.accepted {
+            color: #00ff00;
+            text-shadow: 0 0 6px rgba(0, 255, 0, 0.3);
+        }
+
+        .research-item .venue.rejected {
+            color: #ff4444;
+        }
+
+        .research-item .paper-link {
+            display: inline-block;
+            margin-top: 6px;
+            color: #00aaff;
+            text-decoration: none;
+            font-size: 0.9em;
+            transition: color 0.3s;
+        }
+
+        .research-item .paper-link:hover {
+            color: #00ff00;
+            text-shadow: 0 0 5px rgba(0, 255, 0, 0.4);
+        }
+
         ul {
             padding-left: 20px;
             margin: 10px 0;
@@ -222,7 +249,7 @@
         <div class="subtitle">PhD Student @ Johns Hopkins University | NeuroAI Researcher</div>
         <div class="fun-fact">"Breaking down intelligence, one token at a time... or should I say, one neuron?" 🧠</div>
         <div class="contact">
-            <a href="mailto:ahatami2@jh.edu">📧 Email</a>
+            <a href="/cdn-cgi/l/email-protection#aacbc2cbdecbc7c398eac0c284cfcedf">📧 Email</a>
             <a href="https://github.com/armanhtm" target="_blank">💻 GitHub</a>
             <a href="https://linkedin.com/in/arman-hatami" target="_blank">🔗 LinkedIn</a>
             <a href="https://scholar.google.com/citations?user=n2_BtRMAAAAJ&hl=en" target="_blank">🎓 Google Scholar</a>
@@ -286,16 +313,25 @@
 
     <section>
         <h2>Recent Work 📝</h2>
+
+        <div class="research-item">
+            <strong>Class Unlearning via Depth-Aware Removal of Forget-Specific Directions</strong><br>
+            <span class="venue accepted">✓ CVPR 2026 – Machine Unlearning in Vision (MUV) Workshop</span><br>
+            Surgically removing what a vision model knows about a class, layer by layer, without touching everything else it learned.<br>
+            <a class="paper-link" href="https://drive.google.com/file/d/1_WjxFZ3RqZFTE4WsiDYKPRuhaUEkFEJj/view?usp=sharing" target="_blank">📄 Paper</a>
+        </div>
+
         <div class="research-item">
             <strong>Constrained Entropic Unlearning: A Primal-Dual Framework for LLMs</strong><br>
-            <span style="color: #888;">NeurIPS 2025 (Accepted)</span><br>
-            Teaching models to forget while staying useful. It's harder than it sounds.
+            <span class="venue accepted">✓ NeurIPS 2025 (Accepted)</span><br>
+            Teaching models to forget while staying useful. It's harder than it sounds.<br>
+            <a class="paper-link" href="https://neurips.cc/virtual/2025/loc/san-diego/poster/117318" target="_blank">📄 Paper</a>
         </div>
 
         <div class="research-item">
             <strong>Brain Inspired True Unlearning</strong><br>
-            <span style="color: #888;">Submitted to ICLR 2026 (zero chance to get accepted LOL)</span><br>
-          Have you ever thought about how we forget everything without doing anything? Cost-free! We spend too many resources to unlearn in large models, but the brain does it for free and we're sad about it :)
+            <span class="venue rejected">ICLR 2026 – Desk Rejected (the journey continues in a NeuroScience Journal with brain studies as a Spiking Neural Networks)</span><br>
+            Have you ever thought about how we forget everything without doing anything? Cost-free! We spend too many resources to unlearn in large models, but the brain does it for free and we're sad about it :)
         </div>
     </section>
 
@@ -324,24 +360,21 @@
 
     <div class="ascii-art">
         <pre>
-    ╔════════════════════════════════════════╗
-    ║  "The question isn't who will let me; ║
-    ║   it's who will stop me."             ║
-    ║                          - Arman      ║
-    ╚════════════════════════════════════════╝
+    ╔══════════════════════════════════════════════════╗
+    ║  "I study how models forget.                    ║
+    ║   Ironically, I can't forget anything."   ║
+    ║                              — Arman            ║
+    ╚══════════════════════════════════════════════════╝
         </pre>
     </div>
 
     <footer>
-        <p>© 2025 Arman Hatami | Built with curiosity, stress, and existential questions about AI</p>
+        <p>© 2026 Arman Hatami | Built with curiosity, stress, and existential questions about AI</p>
         <p style="margin-top: 10px; font-size: 0.8em;">Last updated: When the models finally understand what intelligence means</p>
     </footer>
 
-    <script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
         // Easter egg: Console message
         console.log("%c🤖 Inspecting the code, eh? I like your style.", "color: #00ff00; font-size: 16px; font-weight: bold;");
         console.log("%cIf you're reading this, we should definitely talk. Email me at ahatami2@jh.edu", "color: #00aaff; font-size: 14px;");
-        console.log("%cP.S. - The real intelligence test is whether you can debug my production code at 3 AM.", "color: #ff6b6b; font-style: italic;");
-    </script>
-</body>
-</html>
+        console.log("%cP.S. - The re
